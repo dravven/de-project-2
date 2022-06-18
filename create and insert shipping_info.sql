@@ -1,16 +1,16 @@
 create table shipping_info (
-    shipping_id bigint,
-    vendor_id bigint,
+    shippingid bigint,
+    vendorid bigint,
     payment_amount numeric(14,2),
     shipping_plan_datetime timestamp,
     transfer_type_id bigint,
     shipping_country_id bigint,
-    agreement_id bigint,
+    agreementid bigint,
 
-    primary key (shipping_id),
+    primary key (shippingid),
     foreign key (transfer_type_id) references shipping_transfer(transfer_type_id),
     foreign key (shipping_country_id) references shipping_country_rates(shipping_country_id),
-    foreign key (shipping_country_id) references shipping_agreement(agreement_id)
+    foreign key (agreementid) references shipping_agreement(agreementid)
 );
 
 insert into shipping_info

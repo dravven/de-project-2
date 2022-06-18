@@ -1,5 +1,5 @@
 create table shipping_transfer (
-    id serial,
+    transfer_type_id serial,
     transfer_type text,
     transfer_model text,
     shipping_transfer_rate numeric(14,3),

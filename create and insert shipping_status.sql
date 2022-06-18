@@ -1,11 +1,11 @@
 create table shipping_status (
-    shipping_id bigint,
+    shippingid bigint,
     status text,
     state text,
     shipping_start_fact_datetime timestamp,
     shipping_end_fact_datetime timestamp,
 
-    primary key (shipping_id)
+    primary key (shippingid)
 );
 
 insert into shipping_status
