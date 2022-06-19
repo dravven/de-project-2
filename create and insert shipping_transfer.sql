@@ -4,7 +4,7 @@ create table shipping_transfer (
     transfer_model text,
     shipping_transfer_rate numeric(14,3),
 
-    primary key (id)
+    primary key (transfer_type_id)
 );
 
 insert into shipping_transfer(transfer_type, transfer_model, shipping_transfer_rate)
